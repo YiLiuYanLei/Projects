@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="fault" extends="struts-default">
+
+        <action name="LoginAction" class="Action.LoginAction">
+            <result name="success">/Pack/index.jsp</result>
+            <result name="admin">/Pack/admin.jsp</result>
+            <result name="error">/Pack/login.jsp</result>
+        </action>
+
+        <action name = "RegisterAction" class = "Action.RegisterAction">
+            <result name = "success">/Pack/login.jsp</result>
+            <result name = "error">/Pack/register.jsp</result>
+        </action>
+
+        <action name = "EditorAction" class = "Action.EditorAction">
+            <result name = "success">/Pack/blogPage.jsp</result>
+        </action>
+
+        <action name = "Page2Action" class="Action.Page2Action">
+            <result name = "login">/Pack/login.jsp</result>
+            <result name = "register">/Pack/register.jsp</result>
+            <result name = "index">/Pack/index.jsp</result>
+            <result name = "mainBlog">/Pack/mainBlog.jsp</result>
+            <result name = "blogPage">/Pack/blogPage.jsp</result>
+            <result name = "editor">/Pack/editor.jsp</result>
+            <result name = "index2">/Pack/index2.jsp</result>
+            <result name = "blogPage2">/Pack/blogPage2.jsp</result>
+        </action>
+
+        <action name = "AddAccountAction" class = "Action.AddAccountAction">
+            <result name = "success">/Pack/admin.jsp</result>
+            <result name = "error">/Pack/admin.jsp</result>
+        </action>
+        <action name = "DelAccountAction" class = "Action.DelAccountAction">
+            <result name = "success">/Pack/admin.jsp</result>
+            <result name = "error">/Pack/admin.jsp</result>
+        </action>
+    </package>
+</struts>
